@@ -1,66 +1,153 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# MedEquip Pro — Medical Equipment E-Commerce Platform
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A professional, scalable medical equipment e-commerce and business management platform built with Laravel 11, Filament 3, Livewire 3, and Supabase PostgreSQL.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Tech Stack
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+| Layer | Technology |
+|---|---|
+| Backend | Laravel 11, PHP 8.3 |
+| Admin Panel | Filament 3 |
+| Frontend | Blade, Livewire 3, Alpine.js, Tailwind CSS |
+| Build Tool | Vite |
+| Database | PostgreSQL (Supabase managed) |
+| File Storage | Supabase Storage (S3-compatible) |
+| Payments | Paystack, Flutterwave |
+| Email | Resend |
+| RBAC | spatie/laravel-permission |
+| PDF | barryvdh/laravel-dompdf |
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## Requirements
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- PHP 8.3+
+- Composer 2.x
+- Node.js 18+ and npm
+- PostgreSQL (via Supabase)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Local Development Setup
 
-## Laravel Sponsors
+### 1. Clone the repository
+```bash
+git clone https://github.com/your-org/medical-web.git
+cd medical-web
+```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 2. Install PHP dependencies
+```bash
+composer install --no-security-blocking
+```
 
-### Premium Partners
+### 3. Install Node dependencies
+```bash
+npm install
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### 4. Environment configuration
+```bash
+cp .env.example .env
+php artisan key:generate
+```
 
-## Contributing
+Edit `.env` with your Supabase credentials and API keys.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### 5. Database setup
+Ensure your Supabase PostgreSQL credentials are in `.env`, then:
+```bash
+php artisan migrate --seed
+```
 
-## Code of Conduct
+### 6. Create admin user
+```bash
+php artisan make:filament-user
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 7. Storage link
+```bash
+php artisan storage:link
+```
 
-## Security Vulnerabilities
+### 8. Build frontend assets
+```bash
+npm run dev
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### 9. Start the development server
+```bash
+php artisan serve
+```
+
+Visit: http://localhost:8000
+Admin panel: http://localhost:8000/admin
+
+---
+
+## Environment Variables
+
+See `.env.example` for all required environment variables.
+
+Key variables:
+- `DB_*` — Supabase PostgreSQL connection
+- `AWS_*` — Supabase Storage (S3-compatible)
+- `PAYSTACK_*` — Paystack payment gateway
+- `FLUTTERWAVE_*` — Flutterwave payment gateway
+- `RESEND_API_KEY` — Resend transactional email
+
+---
+
+## Admin Panel
+
+URL: `/admin`
+
+Default roles:
+- Super Admin
+- Administrator
+- Sales Manager
+- Inventory Manager
+- Order Manager
+- Content Manager
+
+---
+
+## Production Deployment
+
+See `docs/deployment.md` for full Ubuntu VPS deployment guide.
+
+Quick summary:
+1. Ubuntu 24.04 LTS VPS
+2. Nginx + PHP-FPM 8.3
+3. Supabase PostgreSQL (external)
+4. Supervisor for queue workers
+5. Laravel Scheduler via cron
+6. Let's Encrypt SSL
+
+---
+
+## Development Phases
+
+- [x] Phase 1: Project Foundation
+- [ ] Phase 2: Database & Authentication
+- [ ] Phase 3: Public Website
+- [ ] Phase 4: E-Commerce
+- [ ] Phase 5: Admin Dashboard
+- [ ] Phase 6: Finalization
+
+---
+
+## Security
+
+- Never commit `.env` files
+- All payment verifications are server-side
+- Webhook signatures are verified (HMAC)
+- Role-based access control enforced throughout
+
+---
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Proprietary. All rights reserved.
