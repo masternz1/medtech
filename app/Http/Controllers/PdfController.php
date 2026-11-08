@@ -33,3 +33,4 @@ class PdfController extends Controller
         return $pdf->stream("Invoice_{$orderNumber}.pdf");
     }
 }
+

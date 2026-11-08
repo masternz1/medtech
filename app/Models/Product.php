@@ -142,7 +142,7 @@ class Product extends Model
 
     public function getPrimaryImageUrlAttribute(): ?string
     {
-        return $this->primaryImage?->path ?? $this->images->first()?->path;
+        return $this->primaryImage?->url ?? $this->images->first()?->url;
     }
 
     public function getFormattedPriceAttribute(): string

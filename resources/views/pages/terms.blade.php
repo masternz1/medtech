@@ -1,26 +1,26 @@
 @extends('layouts.public')
 
-@section('title', 'Terms of Supply & Warranty — MedEquip Pro')
+@section('title', 'Terms of Supply & Warranty | MedTech Distributions')
 
 @section('content')
 
-    <div class="bg-white border-b border-slate-200 py-8">
+    <div class="page-head py-8">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <nav class="flex text-xs text-slate-500 mb-2 space-x-2">
-                <a href="{{ route('home') }}" class="hover:text-teal-600 transition">Home</a>
+                <a href="{{ route('home') }}" class="hover:text-brand-600 transition">Home</a>
                 <span>/</span>
                 <span class="text-slate-900 font-semibold">Terms of Supply</span>
             </nav>
-            <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">Terms of Supply &amp; Clinical Equipment Warranty</h1>
+            <h1 class="text-3xl font-bold text-slate-900 tracking-tight">Terms of Supply &amp; Clinical Equipment Warranty</h1>
         </div>
     </div>
 
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6 text-xs sm:text-sm text-slate-700 leading-relaxed">
+        <div class="bg-white p-8 rounded-2xl border border-slate-200  space-y-6 text-xs sm:text-sm text-slate-700 leading-relaxed">
             <section class="space-y-2">
                 <h2 class="text-base font-bold text-slate-900">1. Acceptance of Medical Equipment Terms</h2>
                 <p>
-                    By placing an order or requesting a formal quotation with MedEquip Pro, you acknowledge that all products supplied are intended for clinical, hospital, diagnostic, laboratory, or healthcare training use by qualified healthcare practitioners.
+                    By placing an order or requesting a formal quotation with MedTech Distributions, you acknowledge that all products supplied are intended for clinical, hospital, diagnostic, laboratory, or healthcare training use by qualified healthcare practitioners.
                 </p>
             </section>
 

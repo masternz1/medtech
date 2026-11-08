@@ -90,11 +90,11 @@
         <table style="width: 100%;">
             <tr>
                 <td>
-                    <div class="logo-title">MedEquip Pro</div>
+                    <div class="logo-title">MedTech Distributions</div>
                     <div class="subtitle">Tax Invoice &amp; Delivery Document</div>
                     <div style="font-size: 9px; color: #475569; margin-top: 4px;">
-                        Victoria Island, Lagos, Nigeria<br>
-                        Phone: {{ config('env.COMPANY_PHONE', '+234 000 000 0000') }} | Email: info@medequippro.com
+                        {{ $company['address'] ?? 'Akowonjo, Lagos, Nigeria' }}<br>
+                        @if(!empty($company['phone'])) Phone: {{ $company['phone'] }} @endif @if(!empty($company['email'])) | Email: {{ $company['email'] }} @endif
                     </div>
                 </td>
                 <td style="text-align: right; vertical-align: top;">
@@ -190,3 +190,4 @@
 
 </body>
 </html>
+

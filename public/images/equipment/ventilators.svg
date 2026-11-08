@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360" fill="none" role="img">
+<ellipse cx="240" cy="332" rx="170" ry="9" fill="#e8edf3"/>
+
+<rect x="228" y="205" width="16" height="100" fill="#93b8dc"/>
+<rect x="150" y="302" width="172" height="10" rx="5" fill="#174468"/><circle cx="165" cy="322" r="9" fill="#174468"/><circle cx="165" cy="322" r="3.6" fill="#c9d3df"/><circle cx="236" cy="322" r="9" fill="#174468"/><circle cx="236" cy="322" r="3.6" fill="#c9d3df"/><circle cx="307" cy="322" r="9" fill="#174468"/><circle cx="307" cy="322" r="3.6" fill="#c9d3df"/>
+<rect x="140" y="50" width="190" height="160" rx="12" fill="#dce8f5" stroke="#93b8dc" stroke-width="2"/>
+<rect x="153" y="63" width="164" height="94" rx="6" fill="#0f2a40"/>
+<polyline points="160,92.0 170,83.4 180,80.0 190,83.9 200,92.7 210,101.1 220,104.0 230,99.6 240,90.6 250,82.5 260,80.1 270,85.0 280,94.1 290,101.9 300,103.8 310,98.4" stroke="#5fd4a0" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><polyline points="160,122.0 170,122.0 180,118.4 190,122.0 200,141.2 210,111.2 220,122.0 230,122.0 240,122.0 250,122.0 260,118.4 270,122.0 280,141.2 290,111.2 300,122.0 310,122.0" stroke="#7ec8ff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><polyline points="160,146.0 170,143.1 180,141.0 190,140.0 200,140.5 210,142.4 220,145.2 230,143.9 240,141.5 250,140.1 260,140.2 270,141.8 280,144.3 290,144.7 300,142.1 310,140.4" stroke="#ffd166" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="180" cy="184" r="12" fill="#2166a1"/><circle cx="235" cy="184" r="12" fill="#93b8dc"/><circle cx="290" cy="184" r="12" fill="#2166a1"/>
+<path d="M332 100 C395 96 410 170 378 218 C362 242 340 246 332 262" stroke="#2166a1" stroke-width="9" stroke-linecap="round"/>
+<path d="M332 128 C376 128 386 176 366 208" stroke="#93b8dc" stroke-width="7" stroke-linecap="round"/>
+<rect x="318" y="254" width="30" height="16" rx="5" fill="#174468"/>
+
+</svg>

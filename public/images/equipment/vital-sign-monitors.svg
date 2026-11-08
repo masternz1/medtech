@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360" fill="none" role="img">
+<ellipse cx="240" cy="332" rx="170" ry="9" fill="#e8edf3"/>
+
+<rect x="85" y="48" width="310" height="204" rx="12" fill="#174468"/>
+<rect x="98" y="60" width="284" height="180" rx="5" fill="#0f2a40"/>
+<polyline points="108,100.0 118,100.0 128,95.2 138,100.0 148,125.6 158,85.6 168,100.0 178,100.0 188,100.0 198,100.0 208,95.2 218,100.0 228,125.6 238,85.6 248,100.0 258,100.0 268,100.0 278,100.0" stroke="#5fd4a0" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><polyline points="108,146.0 118,136.7 128,133.0 138,137.2 148,146.8 158,155.8 168,159.0 178,154.2 188,144.5 198,135.7 208,133.1 218,138.4 228,148.3 238,156.8 248,158.7 258,153.0 268,143.0 278,134.8" stroke="#7ec8ff" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/><polyline points="108,190.0 118,186.2 128,183.3 138,182.0 148,182.7 158,185.2 168,188.9 178,187.2 188,183.9 198,182.2 208,182.3 218,184.4 228,187.8 238,188.3 248,184.7 258,182.5 268,182.1 278,183.6" stroke="#ffd166" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="300" y="112" font-family="Arial,sans-serif" font-size="38" font-weight="700" fill="#5fd4a0">72</text>
+<text x="300" y="160" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#7ec8ff">98</text>
+<text x="292" y="214" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#ffd166">120/80</text>
+<rect x="224" y="252" width="32" height="40" fill="#93b8dc"/>
+<rect x="160" y="290" width="160" height="16" rx="8" fill="#c9d3df"/>
+
+</svg>

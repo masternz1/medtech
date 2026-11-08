@@ -20,13 +20,13 @@ class HomeController extends Controller
             ->topLevel()
             ->withCount('products')
             ->orderBy('sort_order')
-            ->take(8)
+            ->take(9)
             ->get();
 
         $featuredProducts = Product::active()
             ->featured()
             ->with(['category', 'brand', 'primaryImage', 'inventory'])
-            ->take(8)
+            ->take(10)
             ->get();
 
         $newArrivals = Product::active()

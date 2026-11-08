@@ -16,26 +16,26 @@ class ContentSeeder extends Seeder
     {
         // ─── Settings ─────────────────────────────────────────────────
         $settings = [
-            ['group' => 'general', 'key' => 'company_name', 'value' => 'MedEquip Pro', 'type' => 'string', 'label' => 'Company Name'],
-            ['group' => 'general', 'key' => 'company_tagline', 'value' => 'Professional Medical Equipment Solutions', 'type' => 'string', 'label' => 'Company Tagline'],
-            ['group' => 'general', 'key' => 'company_description', 'value' => 'MedEquip Pro is a leading supplier of professional medical equipment, serving hospitals, clinics, laboratories and healthcare professionals with quality medical devices and exceptional customer support.', 'type' => 'text', 'label' => 'Company Description'],
-            ['group' => 'contact', 'key' => 'company_phone', 'value' => '+234 000 000 0000', 'type' => 'string', 'label' => 'Phone Number'],
-            ['group' => 'contact', 'key' => 'company_email', 'value' => 'info@medequippro.com', 'type' => 'string', 'label' => 'Email Address'],
-            ['group' => 'contact', 'key' => 'company_whatsapp', 'value' => '+234 000 000 0000', 'type' => 'string', 'label' => 'WhatsApp Number'],
-            ['group' => 'contact', 'key' => 'company_address', 'value' => 'Victoria Island, Lagos, Nigeria', 'type' => 'string', 'label' => 'Business Address'],
+            ['group' => 'general', 'key' => 'company_name', 'value' => 'MedTech Distributions Ltd', 'type' => 'string', 'label' => 'Company Name'],
+            ['group' => 'general', 'key' => 'company_tagline', 'value' => 'Dealers in all types of medical equipment', 'type' => 'string', 'label' => 'Company Tagline'],
+            ['group' => 'general', 'key' => 'company_description', 'value' => 'MedTech Distributions Ltd deals in all types of medical equipment: ultrasound systems, CT scanners, X-ray machines, ventilators, vital sign monitors, dialysis machines, analyzers, MRI machines and mammography.', 'type' => 'text', 'label' => 'Company Description'],
+            ['group' => 'contact', 'key' => 'company_phone', 'value' => '', 'type' => 'string', 'label' => 'Phone Number'],
+            ['group' => 'contact', 'key' => 'company_email', 'value' => '', 'type' => 'string', 'label' => 'Email Address'],
+            ['group' => 'contact', 'key' => 'company_whatsapp', 'value' => '', 'type' => 'string', 'label' => 'WhatsApp Number'],
+            ['group' => 'contact', 'key' => 'company_address', 'value' => 'Bethel Ultra Modern Plaza, Stes 113/107, 117 Shasha Rd, Doremeta Bus Stop, Akowonjo, Lagos', 'type' => 'string', 'label' => 'Business Address'],
             ['group' => 'contact', 'key' => 'business_hours', 'value' => 'Monday – Friday: 8:00 AM – 6:00 PM | Saturday: 9:00 AM – 2:00 PM', 'type' => 'string', 'label' => 'Business Hours'],
             ['group' => 'social', 'key' => 'facebook_url', 'value' => '#', 'type' => 'string', 'label' => 'Facebook URL'],
             ['group' => 'social', 'key' => 'twitter_url', 'value' => '#', 'type' => 'string', 'label' => 'Twitter URL'],
             ['group' => 'social', 'key' => 'instagram_url', 'value' => '#', 'type' => 'string', 'label' => 'Instagram URL'],
             ['group' => 'social', 'key' => 'linkedin_url', 'value' => '#', 'type' => 'string', 'label' => 'LinkedIn URL'],
-            ['group' => 'seo', 'key' => 'meta_title', 'value' => 'MedEquip Pro — Professional Medical Equipment Supplier', 'type' => 'string', 'label' => 'Default Meta Title'],
+            ['group' => 'seo', 'key' => 'meta_title', 'value' => 'MedTech Distributions — Professional Medical Equipment Supplier', 'type' => 'string', 'label' => 'Default Meta Title'],
             ['group' => 'seo', 'key' => 'meta_description', 'value' => 'Leading medical equipment supplier. ICU ventilators, patient monitors, oxygen concentrators, hospital beds and laboratory equipment. Serving hospitals and clinics across Nigeria and West Africa.', 'type' => 'text', 'label' => 'Default Meta Description'],
             ['group' => 'payment', 'key' => 'default_currency', 'value' => 'NGN', 'type' => 'string', 'label' => 'Default Currency'],
             ['group' => 'payment', 'key' => 'vat_rate', 'value' => '0', 'type' => 'integer', 'label' => 'VAT Rate (%)'],
             ['group' => 'homepage', 'key' => 'hero_title', 'value' => 'Professional Medical Equipment', 'type' => 'string', 'label' => 'Hero Title'],
             ['group' => 'homepage', 'key' => 'hero_subtitle', 'value' => 'Quality medical devices for hospitals, clinics and healthcare professionals. Trusted equipment supplier with technical support and competitive pricing.', 'type' => 'text', 'label' => 'Hero Subtitle'],
-            ['group' => 'homepage', 'key' => 'about_title', 'value' => 'About MedEquip Pro', 'type' => 'string', 'label' => 'About Section Title'],
-            ['group' => 'homepage', 'key' => 'about_text', 'value' => 'With years of experience in the medical equipment industry, MedEquip Pro has built a reputation for reliability, quality and excellent customer service. We partner with leading global manufacturers to bring the best medical technology to healthcare facilities.', 'type' => 'text', 'label' => 'About Section Text'],
+            ['group' => 'homepage', 'key' => 'about_title', 'value' => 'About MedTech Distributions', 'type' => 'string', 'label' => 'About Section Title'],
+            ['group' => 'homepage', 'key' => 'about_text', 'value' => 'With years of experience in the medical equipment industry, MedTech Distributions has built a reputation for reliability, quality and excellent customer service. We partner with leading global manufacturers to bring the best medical technology to healthcare facilities.', 'type' => 'text', 'label' => 'About Section Text'],
         ];
 
         foreach ($settings as $s) {
@@ -56,10 +56,10 @@ class ContentSeeder extends Seeder
 
         // ─── Testimonials ─────────────────────────────────────────────
         $testimonials = [
-            ['name' => 'Dr. Adebayo Ogunlesi', 'title' => 'Medical Director', 'organization' => 'Lagos General Hospital', 'content' => 'MedEquip Pro has been our trusted supplier for critical care ventilators and patient monitors. Their technical support team is highly responsive and knowledgeable. Excellent service.', 'rating' => 5, 'sort_order' => 1],
-            ['name' => 'Pharm. Chioma Nwosu', 'title' => 'Head of Procurement', 'organization' => 'St. Mary\'s Catholic Hospital', 'content' => 'We have purchased laboratory equipment and diagnostic devices from MedEquip Pro for over three years. Competitive pricing, genuine products and reliable delivery every time.', 'rating' => 5, 'sort_order' => 2],
-            ['name' => 'Engr. Ibrahim Musa', 'title' => 'Biomedical Engineer', 'organization' => 'National Hospital Abuja', 'content' => 'The quality of equipment and after-sales support we receive from MedEquip Pro is outstanding. They provide genuine spare parts and technical training for our staff.', 'rating' => 5, 'sort_order' => 3],
-            ['name' => 'Dr. Funke Adeyemi', 'title' => 'Consultant Pulmonologist', 'organization' => 'University College Hospital Ibadan', 'content' => 'We recently purchased several ICU ventilators from MedEquip Pro. The equipment arrived well-packaged, on schedule, and their installation team was professional and thorough.', 'rating' => 4, 'sort_order' => 4],
+            ['name' => 'Dr. Adebayo Ogunlesi', 'title' => 'Medical Director', 'organization' => 'Lagos General Hospital', 'content' => 'MedTech Distributions has been our trusted supplier for critical care ventilators and patient monitors. Their technical support team is highly responsive and knowledgeable. Excellent service.', 'rating' => 5, 'sort_order' => 1],
+            ['name' => 'Pharm. Chioma Nwosu', 'title' => 'Head of Procurement', 'organization' => 'St. Mary\'s Catholic Hospital', 'content' => 'We have purchased laboratory equipment and diagnostic devices from MedTech Distributions for over three years. Competitive pricing, genuine products and reliable delivery every time.', 'rating' => 5, 'sort_order' => 2],
+            ['name' => 'Engr. Ibrahim Musa', 'title' => 'Biomedical Engineer', 'organization' => 'National Hospital Abuja', 'content' => 'The quality of equipment and after-sales support we receive from MedTech Distributions is outstanding. They provide genuine spare parts and technical training for our staff.', 'rating' => 5, 'sort_order' => 3],
+            ['name' => 'Dr. Funke Adeyemi', 'title' => 'Consultant Pulmonologist', 'organization' => 'University College Hospital Ibadan', 'content' => 'We recently purchased several ICU ventilators from MedTech Distributions. The equipment arrived well-packaged, on schedule, and their installation team was professional and thorough.', 'rating' => 4, 'sort_order' => 4],
         ];
 
         foreach ($testimonials as $t) {

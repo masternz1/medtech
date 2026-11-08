@@ -99,11 +99,11 @@
         <table style="width: 100%;">
             <tr>
                 <td>
-                    <div class="logo-title">MedEquip Pro</div>
+                    <div class="logo-title">MedTech Distributions</div>
                     <div class="subtitle">Clinical Systems &amp; Medical Equipment Distributor</div>
                     <div style="font-size: 9px; color: #475569; margin-top: 4px;">
-                        Victoria Island, Lagos, Nigeria<br>
-                        Phone: {{ config('env.COMPANY_PHONE', '+234 000 000 0000') }} | Email: info@medequippro.com
+                        {{ $company['address'] ?? 'Akowonjo, Lagos, Nigeria' }}<br>
+                        @if(!empty($company['phone'])) Phone: {{ $company['phone'] }} @endif @if(!empty($company['email'])) | Email: {{ $company['email'] }} @endif
                     </div>
                 </td>
                 <td style="text-align: right; vertical-align: top;">
@@ -191,8 +191,8 @@
         <tr>
             <td>
                 <strong>Authorized Signatory</strong><br>
-                MedEquip Pro Solutions Limited<br>
-                Biomedical Procurement Directorate
+                MedTech Distributions Ltd<br>
+                Authorised signatory
             </td>
             <td>
                 <strong>Client Acceptance Signature</strong><br>
@@ -204,3 +204,4 @@
 
 </body>
 </html>
+

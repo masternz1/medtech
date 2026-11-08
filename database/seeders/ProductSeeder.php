@@ -20,7 +20,7 @@ class ProductSeeder extends Seeder
         $products = [
             // ICU Ventilators
             [
-                'category' => 'icu-ventilators', 'brand' => 'hamilton-medical',
+                'category' => 'ventilators', 'brand' => 'hamilton-medical',
                 'name' => 'Hamilton C6 ICU Ventilator', 'sku' => 'VENT-HAM-C6',
                 'model_number' => 'C6', 'price' => 45000.00, 'pricing_type' => 'quote_preferred',
                 'short_description' => 'Advanced ICU ventilator with Adaptive Support Ventilation for critical care.',
@@ -41,7 +41,7 @@ class ProductSeeder extends Seeder
                 ],
             ],
             [
-                'category' => 'icu-ventilators', 'brand' => 'drager',
+                'category' => 'ventilators', 'brand' => 'drager',
                 'name' => 'Dräger Evita V800 Ventilator', 'sku' => 'VENT-DRG-V800',
                 'model_number' => 'Evita V800', 'price' => 52000.00, 'pricing_type' => 'quote_preferred',
                 'short_description' => 'Premium ICU ventilation platform with SmartCare for automated weaning.',
@@ -60,7 +60,7 @@ class ProductSeeder extends Seeder
             ],
             // Portable Ventilators
             [
-                'category' => 'portable-ventilators', 'brand' => 'hamilton-medical',
+                'category' => 'ventilators', 'brand' => 'hamilton-medical',
                 'name' => 'Hamilton T1 Transport Ventilator', 'sku' => 'VENT-HAM-T1',
                 'model_number' => 'T1', 'price' => 28000.00, 'pricing_type' => 'fixed',
                 'short_description' => 'Military-grade transport ventilator for intra-hospital and emergency transport.',
@@ -79,7 +79,7 @@ class ProductSeeder extends Seeder
             ],
             // Oxygen Concentrators
             [
-                'category' => 'oxygen-concentrators', 'brand' => 'yuwell',
+                'category' => 'other-medical-equipment', 'brand' => 'yuwell',
                 'name' => 'Yuwell 8F-5AW Oxygen Concentrator', 'sku' => 'OXY-YUW-8F5AW',
                 'model_number' => '8F-5AW', 'price' => 850.00, 'pricing_type' => 'fixed',
                 'short_description' => '5-litre medical oxygen concentrator with nebulizer function for home and clinical use.',
@@ -98,7 +98,7 @@ class ProductSeeder extends Seeder
             ],
             // Patient Monitors
             [
-                'category' => 'patient-monitors', 'brand' => 'mindray',
+                'category' => 'vital-sign-monitors', 'brand' => 'mindray',
                 'name' => 'Mindray ePM 15M Patient Monitor', 'sku' => 'MON-MND-EPM15',
                 'model_number' => 'ePM 15M', 'price' => 3500.00, 'pricing_type' => 'fixed',
                 'short_description' => '15-inch multi-parameter patient monitor with ECG, SpO2, NIBP and temperature.',
@@ -117,7 +117,7 @@ class ProductSeeder extends Seeder
             ],
             // Hospital Beds
             [
-                'category' => 'hospital-beds', 'brand' => 'ge-healthcare',
+                'category' => 'other-medical-equipment', 'brand' => 'ge-healthcare',
                 'name' => '5-Function Electric ICU Bed', 'sku' => 'BED-5FUNC-ICU',
                 'model_number' => 'MED-ICU-5E', 'price' => null, 'pricing_type' => 'quote_only',
                 'short_description' => 'Premium 5-function electric ICU bed with CPR release, Trendelenburg and weighing system.',
@@ -136,7 +136,7 @@ class ProductSeeder extends Seeder
             ],
             // Laboratory Equipment
             [
-                'category' => 'laboratory-equipment', 'brand' => 'mindray',
+                'category' => 'analyzers', 'brand' => 'mindray',
                 'name' => 'Mindray BC-5000 Haematology Analyser', 'sku' => 'LAB-MND-BC5000',
                 'model_number' => 'BC-5000', 'price' => 12500.00, 'pricing_type' => 'quote_preferred',
                 'short_description' => '5-part differential haematology analyser with 60 samples per hour throughput.',
@@ -154,7 +154,7 @@ class ProductSeeder extends Seeder
             ],
             // Diagnostic Equipment
             [
-                'category' => 'diagnostic-equipment', 'brand' => 'edan-instruments',
+                'category' => 'vital-sign-monitors', 'brand' => 'edan-instruments',
                 'name' => 'Edan SE-1201 12-Channel ECG Machine', 'sku' => 'DIA-EDN-SE1201',
                 'model_number' => 'SE-1201', 'price' => 2800.00, 'pricing_type' => 'fixed',
                 'short_description' => 'Professional 12-channel resting ECG with automatic interpretation and thermal printer.',
@@ -173,7 +173,7 @@ class ProductSeeder extends Seeder
             ],
             // Surgical Equipment
             [
-                'category' => 'surgical-equipment', 'brand' => 'ge-healthcare',
+                'category' => 'other-medical-equipment', 'brand' => 'ge-healthcare',
                 'name' => 'LED Surgical Operating Light (Double Dome)', 'sku' => 'SUR-LED-DD700',
                 'model_number' => 'SL-700DD', 'price' => null, 'pricing_type' => 'quote_only',
                 'short_description' => 'Ceiling-mounted double-dome LED surgical light with 160,000 lux illuminance.',
@@ -192,7 +192,7 @@ class ProductSeeder extends Seeder
             ],
             // Medical Consumables
             [
-                'category' => 'medical-consumables', 'brand' => 'philips-healthcare',
+                'category' => 'other-medical-equipment', 'brand' => 'philips-healthcare',
                 'name' => 'Adult Ventilator Breathing Circuit (Pack of 20)', 'sku' => 'CON-CIRC-AD20',
                 'model_number' => 'BC-AD-22', 'price' => 180.00, 'pricing_type' => 'fixed',
                 'short_description' => 'Disposable adult ventilator breathing circuit with water trap, 22mm, 1.8m length.',
