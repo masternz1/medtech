@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="theme-color" content="#2166a1">
+    <meta name="theme-color" content="#0f2d47">
 
     <title>@yield('title', $company['name'] . ' | Medical equipment dealers in Lagos')</title>
     <meta name="description" content="@yield('meta_description', 'Dealers in all types of medical equipment: ultrasound systems, CT scanners, X-ray machines, ventilators, vital sign monitors, dialysis machines, analyzers, MRI and mammography. Based in Lagos, Nigeria.')">
@@ -36,17 +36,17 @@
 <body class="flex min-h-full flex-col font-sans text-[15px] antialiased selection:bg-brand-600 selection:text-white">
 
     {{-- Utility strip --}}
-    <div class="border-b border-slate-200 text-sm text-slate-600">
+    <div class="bg-brand-900 text-sm text-white/75">
         <div class="shell flex min-h-9 items-center justify-between gap-4 py-1">
             <div class="flex items-center gap-5">
-                <a href="{{ route('orders.track') }}" class="hover:text-brand-700">Track an order</a>
-                <a href="{{ route('faq') }}" class="hover:text-brand-700">Help &amp; FAQ</a>
+                <a href="{{ route('orders.track') }}" class="hover:text-white">Track an order</a>
+                <a href="{{ route('faq') }}" class="hover:text-white">Help &amp; FAQ</a>
             </div>
             <div class="flex items-center gap-5">
-                @if($company['email'])<a href="mailto:{{ $company['email'] }}" class="hidden hover:text-brand-700 md:inline">{{ $company['email'] }}</a>@endif
-                @if($company['phone'])<a href="tel:{{ $phoneDigits }}" class="font-semibold text-ink hover:text-brand-700">{{ $company['phone'] }}</a>@else<span class="hidden sm:inline">Lagos, Nigeria</span>@endif
+                @if($company['email'])<a href="mailto:{{ $company['email'] }}" class="hidden hover:text-white md:inline">{{ $company['email'] }}</a>@endif
+                @if($company['phone'])<a href="tel:{{ $phoneDigits }}" class="font-semibold text-white hover:text-gold-300">{{ $company['phone'] }}</a>@else<span class="hidden sm:inline">Lagos, Nigeria</span>@endif
                 @auth
-                    @if(auth()->user()->is_staff)<a href="{{ url('/admin') }}" class="font-semibold text-brand-700">Admin</a>@endif
+                    @if(auth()->user()->is_staff)<a href="{{ url('/admin') }}" class="font-semibold text-gold-300">Admin</a>@endif
                 @endauth
             </div>
         </div>
@@ -191,44 +191,44 @@
     </main>
 
     {{-- Footer --}}
-    <footer class="mt-28 border-t border-slate-200 sm:mt-40">
+    <footer class="mt-28 bg-brand-900 text-white/70 sm:mt-40">
         <div class="shell py-16 sm:py-24">
             <div class="grid gap-14 text-sm sm:grid-cols-2 lg:grid-cols-12">
                 <div class="sm:col-span-2 lg:col-span-4">
                     <div class="flex items-center gap-2.5">
-                        <svg class="h-9 w-9 text-brand-600" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M15 4h10v11h11v10H25v11H15V25H4V15h11z"/><path d="M10 20h5l2.5-5 4 10 2.5-5h6" stroke-width="1.8" stroke-linecap="round"/></svg>
-                        <span class="leading-none"><span class="block font-display text-xl font-bold text-ink">MedTech</span><span class="mt-1 block text-xs font-bold tracking-[.12em] text-brand-600">DISTRIBUTIONS LTD</span></span>
+                        <svg class="h-9 w-9 text-gold-400" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M15 4h10v11h11v10H25v11H15V25H4V15h11z"/><path d="M10 20h5l2.5-5 4 10 2.5-5h6" stroke-width="1.8" stroke-linecap="round"/></svg>
+                        <span class="leading-none"><span class="block font-display text-xl font-bold text-white">MedTech</span><span class="mt-1 block text-xs font-bold tracking-[.12em] text-gold-300">DISTRIBUTIONS LTD</span></span>
                     </div>
-                    <p class="mt-6 max-w-sm leading-loose text-slate-600">{{ $company['name'] }} deals in all types of medical equipment: ultrasound, CT, X-ray, MRI, mammography, ventilators, monitors, dialysis machines and laboratory analyzers.</p>
+                    <p class="mt-6 max-w-sm leading-loose text-white/70">{{ $company['name'] }} deals in all types of medical equipment: ultrasound, CT, X-ray, MRI, mammography, ventilators, monitors, dialysis machines and laboratory analyzers.</p>
                 </div>
 
                 <div class="lg:col-span-3">
-                    <h3 class="mb-6 font-bold text-ink">Visit or contact us</h3>
-                    <ul class="space-y-4 text-slate-600">
-                        <li><span class="block text-xs font-bold text-slate-400">WAREHOUSE</span>{{ $company['address'] }}</li>
-                        @if($company['phone'])<li><a href="tel:{{ $phoneDigits }}" class="hover:text-brand-700">{{ $company['phone'] }}</a></li>@endif
-                        @if($company['email'])<li><a href="mailto:{{ $company['email'] }}" class="break-all hover:text-brand-700">{{ $company['email'] }}</a></li>@endif
+                    <h3 class="mb-6 font-bold text-white">Visit or contact us</h3>
+                    <ul class="space-y-4 text-white/70">
+                        <li><span class="block text-xs font-bold text-white/50">WAREHOUSE</span>{{ $company['address'] }}</li>
+                        @if($company['phone'])<li><a href="tel:{{ $phoneDigits }}" class="hover:text-white">{{ $company['phone'] }}</a></li>@endif
+                        @if($company['email'])<li><a href="mailto:{{ $company['email'] }}" class="break-all hover:text-white">{{ $company['email'] }}</a></li>@endif
                         @if($company['hours'])<li>{{ $company['hours'] }}</li>@endif
                     </ul>
                 </div>
 
                 <div class="lg:col-span-2">
-                    <h3 class="mb-6 font-bold text-ink">Equipment</h3>
-                    <ul class="space-y-4 text-slate-600">
-                        @foreach($navCategories->take(6) as $c)<li><a href="{{ route('products.index', ['category' => $c->slug]) }}" class="hover:text-brand-700">{{ $c->name }}</a></li>@endforeach
-                        <li><a href="{{ route('categories.index') }}" class="font-bold text-brand-700 hover:underline">All categories</a></li>
+                    <h3 class="mb-6 font-bold text-white">Equipment</h3>
+                    <ul class="space-y-4 text-white/70">
+                        @foreach($navCategories->take(6) as $c)<li><a href="{{ route('products.index', ['category' => $c->slug]) }}" class="hover:text-white">{{ $c->name }}</a></li>@endforeach
+                        <li><a href="{{ route('categories.index') }}" class="font-bold text-gold-300 hover:underline">All categories</a></li>
                     </ul>
                 </div>
 
                 <div class="lg:col-span-3">
-                    <h3 class="mb-6 font-bold text-ink">Information</h3>
-                    <ul class="space-y-4 text-slate-600">
-                        <li><a href="{{ route('quotations.create') }}" class="hover:text-brand-700">Request a quote</a></li>
-                        <li><a href="{{ route('orders.track') }}" class="hover:text-brand-700">Track an order</a></li>
-                        <li><a href="{{ route('services.index') }}" class="hover:text-brand-700">Installation and servicing</a></li>
-                        <li><a href="{{ route('faq') }}" class="hover:text-brand-700">FAQ</a></li>
-                        <li><a href="{{ route('terms') }}" class="hover:text-brand-700">Terms of supply</a></li>
-                        <li><a href="{{ route('privacy') }}" class="hover:text-brand-700">Privacy policy</a></li>
+                    <h3 class="mb-6 font-bold text-white">Information</h3>
+                    <ul class="space-y-4 text-white/70">
+                        <li><a href="{{ route('quotations.create') }}" class="hover:text-white">Request a quote</a></li>
+                        <li><a href="{{ route('orders.track') }}" class="hover:text-white">Track an order</a></li>
+                        <li><a href="{{ route('services.index') }}" class="hover:text-white">Installation and servicing</a></li>
+                        <li><a href="{{ route('faq') }}" class="hover:text-white">FAQ</a></li>
+                        <li><a href="{{ route('terms') }}" class="hover:text-white">Terms of supply</a></li>
+                        <li><a href="{{ route('privacy') }}" class="hover:text-white">Privacy policy</a></li>
                     </ul>
                 </div>
             </div>

@@ -25,7 +25,7 @@ export default {
         },
         extend: {
             colors: {
-                // Sampled from the homepage mock-up
+                // Blue brand palette with a gold accent
                 brand: {
                     50: '#eef5fd',
                     100: '#e3edf8',
@@ -36,7 +36,13 @@ export default {
                     600: '#2166a1',
                     700: '#1b5385',
                     800: '#174468',
-                    900: '#12344f',
+                    900: '#0f2d47',
+                },
+                // Warm gold accent for highlights and key buttons
+                gold: {
+                    300: '#f9d27a',
+                    400: '#f5b83d',
+                    500: '#e9a01a',
                 },
                 mist: '#eef1f8',   // light blue tile
                 sand: '#faf3e1',   // warm tile
